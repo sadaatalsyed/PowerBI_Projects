@@ -10,12 +10,17 @@ Each project is designed to solve real-world business problems, extract insights
 ## 🚀 What’s Inside
 
 This repository includes the following projects:
+### 1.HR Analytics Dashboard
+-Analysis of HR Data
+[HRAnalytics](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/HR_Analytics/HR-Attrition-Analysis.png)
+---
 
-### 1. Sales Dashboard
+### 2. Sales Dashboard
 - Sales performance tracking
 - Monthly and yearly trends
 - Region-wise analysis
 - Key KPI monitoring
+  ![Ecommerce-Sales](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Sales_Dashboard/Sales%20Performance%20Dashboard.PNG)
 
 ---
 
@@ -29,9 +34,6 @@ This repository includes the following projects:
 - Financial performance overview
 
 ---
-### 4.HR Analytics Dashboard
--Analysis of HR Data
-[HRAnalytics](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/HR_Analytics/HR%20Analytics.pdf)
 
 ## 🧠 Skills & Tools Used
 
