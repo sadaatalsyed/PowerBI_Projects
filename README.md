@@ -29,6 +29,9 @@ This repository includes the following projects:
 - Financial performance overview
 
 ---
+### 4.HR Analytics Dashboard
+-Analysis of HR Data
+![HRAnalytics](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/HR_Analytics/HR%20Analytics.pdf)
 
 ## 🧠 Skills & Tools Used
 
