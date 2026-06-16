@@ -19,10 +19,6 @@ This repository includes the following projects:
 
 ---
 
-### 2. Inventory Analysis
-- Stock movement insights
-- Fast-moving vs slow-moving products
-- Inventory optimization insights
 
 ---
 
@@ -45,4 +41,67 @@ This repository includes the following projects:
 ---
 
 ## 📌 Project Structure
-# PowerBI_Projects
+Power-BI-Projects/
+│
+├── 01_Sales_Dashboard/
+├── 02_Inventory_Analysis/
+├── 03_Finance_Insights/
+└── README.md
+
+Each folder contains:
+- Power BI file (.pbix)
+- Project-specific README
+- (Optional) dataset or sample data
+- Screenshots of dashboards
+
+---
+
+## 🎯 Purpose of This Repository
+
+The goal of this repository is to demonstrate:
+- Practical data analytics skills
+- Business intelligence thinking
+- Dashboard design and storytelling
+- Real-world problem-solving using data
+
+---
+
+## 📷 Dashboard Previews
+
+> (Add screenshots here later — highly recommended for portfolio impact)
+
+Example:
+- ![Sales Dashboard Preview]
+- ![Finance Dashboard Preview]
+
+---
+
+## 🔥 Why This Matters
+
+Good dashboards don’t just show data — they drive decisions.
+
+This portfolio focuses on:
+- Clarity over complexity
+- Business value over visuals
+- Insights over raw numbers
+
+---
+
+## 📈 Future Improvements
+
+- Add more advanced DAX calculations
+- Integrate SQL-based ETL pipelines
+- Include Python-based data preprocessing
+- Publish interactive Power BI web links
+
+---
+
+## 🤝 Connect With Me
+
+If you're interested in data analytics, Power BI, or data engineering:
+- Feel free to explore my work
+- Open for feedback and collaboration
+
+---
+
+⭐ If you like this repo, consider giving it a star!
