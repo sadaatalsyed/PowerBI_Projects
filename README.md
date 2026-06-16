@@ -80,15 +80,6 @@ The goal of this repository is to demonstrate:
 
 ---
 
-## 📷 Dashboard Previews
-
-> (Add screenshots here later — highly recommended for portfolio impact)
-
-Example:
-- ![Sales Dashboard Preview]
-- ![Finance Dashboard Preview]
-
----
 
 ## 🔥 Why This Matters
 
