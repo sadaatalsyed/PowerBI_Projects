@@ -27,19 +27,24 @@ This repository includes the following projects:
 
 ---
 
-### 3. Finance Insights Dashboard
+### 3. Income Statement Dashboard
 - Revenue breakdown
 - Profit margin analysis
 - Expense tracking
 - Financial performance overview
 
+  ![Income-Statement](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Income-Statement-Dashboard/Income%20Statement%20Dashboard.png)
+  
 ---
+### 4-Revenue Insights Dashboard-Hospitality Domain
+- A very informative dashboard in hospitality domain.Helped me understand terms of the domain and real exepriecne of DAX.
+
+  ![Hospitality](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Revenue%20Insights%20Hospitality%20Domain/Home.jpeg)
 
 ## 🧠 Skills & Tools Used
 
 - Power BI (Data Visualization & Dashboarding)
 - DAX (Data Analysis Expressions)
-- SQL (Data extraction & transformation)
 - Data Modeling
 - Excel (Data cleaning & preprocessing)
 
