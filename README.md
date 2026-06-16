@@ -13,7 +13,7 @@ This repository includes the following projects:
 ### 1.HR Analytics Dashboard
 -Analysis of HR Data
 
-~[HRAnalytics](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/HR_Analytics/HR-Attrition-Analysis.png)
+![HRAnalytics](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/HR_Analytics/HR-Attrition-Analysis.png)
 
 ---
 
@@ -24,9 +24,6 @@ This repository includes the following projects:
 - Key KPI monitoring
   
   ![Ecommerce-Sales](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Sales_Dashboard/Sales%20Performance%20Dashboard.PNG)
-
----
-
 
 ---
 
