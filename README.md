@@ -25,23 +25,14 @@ This repository includes the following projects:
   
   ![Ecommerce-Sales](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Sales_Dashboard/Sales%20Performance%20Dashboard.PNG)
 
----
-
-### 3. Income Statement Dashboard
-- Revenue breakdown
-- Profit margin analysis
-- Expense tracking
-- Financial performance overview
-
-  ![Income-Statement](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Income-Statement-Dashboard/Income%20Statement%20Dashboard.png)
   
 ---
-### 4-Revenue Insights Dashboard-Hospitality Domain
+### 3-Revenue Insights Dashboard-Hospitality Domain
 - A very informative dashboard in hospitality domain.Helped me understand terms of the domain and real exepriecne of DAX.
 
   ![Hospitality](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Revenue%20Insights%20Hospitality%20Domain/Home.jpeg)
 ---
-### 5- Retail-Sales-Insights IT Domain
+### 4- Retail-Sales-Insights IT Domain
 - Another very informative project. Giving confidence for real world complex projects
 ![RetailSales](https://github.com/sadaatalsyed/Power-BI-Projects/blob/main/Sales-Insights-IT-Domain/Dashboard%20Home.JPG?raw=true)
 
