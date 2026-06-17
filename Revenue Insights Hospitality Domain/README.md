@@ -41,7 +41,6 @@ These detailed charts capture week-over-week growth or decline percentages acros
 ## 🛠️ Data Modeling & DAX Formulas
 
 
-
 ### 📅 Calculated Columns (`dim_date` Table)
 
 1. **Week Number (`wn`)**
@@ -51,23 +50,24 @@ These detailed charts capture week-over-week growth or decline percentages acros
 
 
 2. **Day Type (day type)**
-   Purpose:To divide the days between weekdays and working days according to feedback by stakeholders.
+   * *Purpose:*To divide the days between weekdays and working days according to feedback by stakeholders.
    ```dax
     day type = 
     Var wkd = WEEKDAY(dim_date[date],1)
     return
     IF(wkd > 5, "Weekend", "Weekday")
+   
 ### 🚀 Week-over-Week (WoW) Time Intelligence Calculations
- **1. Revenue WoW Change %**
+ 1. **Revenue WoW Change %**
   ```dax
   Revenue WoW change % = 
     Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
     var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
     var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-    return
-    DIVIDE(revcw,revpw,0)-1
-
-  **2. Occupancy WoW Change %**
+    return DIVIDE(revcw,revpw,0)-1
+ ```dax
+ 
+  2. **Occupancy WoW Change %**
  ```dax
   Occupancy WoW change % = 
     Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
@@ -75,8 +75,8 @@ These detailed charts capture week-over-week growth or decline percentages acros
     var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
     return
     DIVIDE(revcw,revpw,0)-1
-
-  **3. ADR WoW change %**
+ ```dax
+  3. **ADR WoW change %**
  ```dax
     ADR WoW change % = 
     Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
@@ -84,7 +84,7 @@ These detailed charts capture week-over-week growth or decline percentages acros
     var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
     return
     DIVIDE(revcw,revpw,0)-1
-  **4. Revpar WoW change %**
+  4. **Revpar WoW change %**
  ```dax
     Revpar WoW change % = 
     Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
@@ -92,7 +92,7 @@ These detailed charts capture week-over-week growth or decline percentages acros
     var revpw =  CALCULATE([RevPAR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
     return
     DIVIDE(revcw,revpw,0)-1
-  **5. Realisation WoW change %**
+  5. **Realisation WoW change %**
  ```dax
   Realisation WoW change % = 
   Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
