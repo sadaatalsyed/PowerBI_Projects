@@ -97,13 +97,13 @@ These detailed charts capture week-over-week growth or decline percentages acros
         
  5.  **Realisation WoW change %**
 
-  ```
-      Realisation WoW change % = 
-      Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
-      var revcw = CALCULATE([Realisation %],dim_date[wn]= selv)
-      var revpw =  CALCULATE([Realisation %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-      return
-      DIVIDE(revcw,revpw,0)-1
+      ```
+          Realisation WoW change % = 
+          Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
+          var revcw = CALCULATE([Realisation %],dim_date[wn]= selv)
+          var revpw =  CALCULATE([Realisation %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
+          return
+          DIVIDE(revcw,revpw,0)-1
 
 
   
