@@ -59,13 +59,12 @@ These detailed charts capture week-over-week growth or decline percentages acros
    
 ### 🚀 Week-over-Week (WoW) Time Intelligence Calculations
  1. **Revenue WoW Change %**
-   ```
+    ```
      Revenue WoW change % = 
       Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
       var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
       var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-      return DIVIDE(revcw,revpw,0)-1
-    
+      return DIVIDE(revcw,revpw,0)-1    
 
  2. **Occupancy WoW Change %**
     ```
@@ -85,11 +84,12 @@ These detailed charts capture week-over-week growth or decline percentages acros
         var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
         return
         DIVIDE(revcw,revpw,0)-1
-    ```
+
 
 
  4. **Revpar WoW change %**
- 
+
+  
         Revpar WoW change % = 
         Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
         var revcw = CALCULATE([RevPAR],dim_date[wn]= selv)
