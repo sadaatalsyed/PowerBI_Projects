@@ -44,13 +44,13 @@ These detailed charts capture week-over-week growth or decline percentages acros
 ### 📅 Calculated Columns (`dim_date` Table)
 
 1. **Week Number (`wn`)**
-   * *Purpose:* Date se standard week number extract karne ke liye.
+   **Purpose:** Date se standard week number extract karne ke liye.
    ```dax
    wn = WEEKNUM(dim_date[date])
 
 
 2. **Day Type (day type)**
-   * *Purpose:*To divide the days between weekdays and working days according to feedback by stakeholders.
+   **Purpose:** To divide the days between weekdays and working days according to feedback by stakeholders.
    ```dax
     day type = 
     Var wkd = WEEKDAY(dim_date[date],1)
@@ -65,7 +65,7 @@ These detailed charts capture week-over-week growth or decline percentages acros
       var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
       var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
       return DIVIDE(revcw,revpw,0)-1
-    ```
+    
 
  2. **Occupancy WoW Change %**
     ```
@@ -75,7 +75,7 @@ These detailed charts capture week-over-week growth or decline percentages acros
       var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
       return
       DIVIDE(revcw,revpw,0)-1
-    ```
+ 
     
  3. **ADR WoW change %**
      ```
@@ -89,14 +89,14 @@ These detailed charts capture week-over-week growth or decline percentages acros
 
 
  4. **Revpar WoW change %**
-     ```
+ 
         Revpar WoW change % = 
         Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
         var revcw = CALCULATE([RevPAR],dim_date[wn]= selv)
         var revpw =  CALCULATE([RevPAR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
         return
         DIVIDE(revcw,revpw,0)-1
-     ```
+  
     
   5. **Realisation WoW change %**
     ```
@@ -106,7 +106,7 @@ These detailed charts capture week-over-week growth or decline percentages acros
       var revpw =  CALCULATE([Realisation %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
       return
       DIVIDE(revcw,revpw,0)-1
-    ```
+
 
   
   
