@@ -60,30 +60,31 @@ These detailed charts capture week-over-week growth or decline percentages acros
 ### 🚀 Week-over-Week (WoW) Time Intelligence Calculations
  1. **Revenue WoW Change %**
    ```
-   Revenue WoW change % = 
-    Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
-    var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
-    var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-    return DIVIDE(revcw,revpw,0)-1
+     Revenue WoW change % = 
+      Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
+      var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
+      var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
+      return DIVIDE(revcw,revpw,0)-1
     ```
+
  2. **Occupancy WoW Change %**
     ```
-     Occupancy WoW change % = 
-    Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
-    var revcw = CALCULATE([Occupancy %],dim_date[wn]= selv)
-    var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-    return
-    DIVIDE(revcw,revpw,0)-1
+       Occupancy WoW change % = 
+      Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
+      var revcw = CALCULATE([Occupancy %],dim_date[wn]= selv)
+      var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
+      return
+      DIVIDE(revcw,revpw,0)-1
     ```
     
  3. **ADR WoW change %**
      ```
-     ADR WoW change % = 
-      Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
-      var revcw = CALCULATE([ADR],dim_date[wn]= selv)
-      var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
-      return
-      DIVIDE(revcw,revpw,0)-1
+       ADR WoW change % = 
+        Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
+        var revcw = CALCULATE([ADR],dim_date[wn]= selv)
+        var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
+        return
+        DIVIDE(revcw,revpw,0)-1
     ```
 
 
