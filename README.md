@@ -1,7 +1,6 @@
-# 📊 Power BI Projects Portfolio
+# 📊Power BI Practice Dashbboards Projects
 
-Welcome to my Power BI portfolio repository.  
-This repo contains multiple **data analytics and business intelligence projects** built using Power BI, SQL, and data modeling techniques.
+
 
 Each project is designed to solve real-world business problems, extract insights from raw data, and present them through interactive dashboards.
 
